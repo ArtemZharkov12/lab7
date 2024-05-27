@@ -1,0 +1,1 @@
+docker buildx build --platform linux/amd64,linux/arm64 --push --tag psevdo12/labtest:v7 --cache-to=type=registry,ref=psevdo12/labtest:cache,max_size=5GB --cache-from=type=registry,ref=psevdo12/labtest:cache -f Dockerfile .
